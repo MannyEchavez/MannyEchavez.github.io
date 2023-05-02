@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  
+</head>
+<body onload="light()">
+	<div class="calculator" id = calculator>
+		<input type="text" class="result" id="result" readonly>
+    <i class="bi bi-brightness-high-fill" id="toggleDark" onclick="dark()"></i>
+		<div class="row">
+			<button class="number " value="AC" onclick="clearResult()">AC</button>
+			<button class="number " value="+/-" onclick="toggleSign()">+/-</button>
+			<button class="number " value="%" onclick="addToResult(this.value)">%</button>
+			<button class="operator black" value="/" onclick="addToResult(this.value)">÷</button>
+		</div>
+		<div class="row">
+			<button class="number" value="7" onclick="addToResult(this.value)">7</button>
+			<button class="number" value="8" onclick="addToResult(this.value)">8</button>
+			<button class="number" value="9" onclick="addToResult(this.value)">9</button>
+			<button class="operator black" value="*" onclick="addToResult(this.value)">×</button>
+		</div>
+		<div class="row">
+			<button class="number" value="4" onclick="addToResult(this.value)">4</button>
+			<button class="number" value="5" onclick="addToResult(this.value)">5</button>
+			<button class="number" value="6" onclick="addToResult(this.value)">6</button>
+			<button class="operator black" value="-" onclick="addToResult(this.value)">-</button>
+		</div>
+		<div class="row">
+			<button class="number" value="1" onclick="addToResult(this.value)">1</button>
+			<button class="number" value="2" onclick="addToResult(this.value)">2</button>
+			<button class="number" value="3" onclick="addToResult(this.value)">3</button>
+			<button class="operator black" value="+" onclick="addToResult(this.value)">+</button>
+		</div>
+		<div class="row">
+			<button class="number zero" value="0" onclick="addToResult(this.value)">0</button>
+			<button class="number" value="." onclick="addToResult(this.value)">.</button>
+			<button class="operator black" value="=" onclick="calculateResult()">=</button>
+		</div>
+	</div>
+
+ 
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
