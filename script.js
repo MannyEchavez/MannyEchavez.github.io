@@ -18,6 +18,7 @@ function addToResult(value) {
   document.getElementById("result").value = result;
 }
 
+
 //clear result screen
 function clearResult() {
   result = "";
