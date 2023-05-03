@@ -1,5 +1,9 @@
 let result = "";
 
+
+//appends characters to screen
+//Example: button 1 is pressed, then button + is pressed, then button 1 is pressed again
+//Display will show 1+1
 function addToResult(value) {
   if (value === "+/-") {
     // Check if the current value is negative
@@ -14,12 +18,14 @@ function addToResult(value) {
   document.getElementById("result").value = result;
 }
 
-
+//clear result screen
 function clearResult() {
   result = "";
   document.getElementById("result").value = result;
 }
 
+
+//calculates input
 function calculateResult() {
     result = eval(result);
     document.getElementById("result").value = result;
@@ -27,7 +33,7 @@ function calculateResult() {
 }
 
 
-//dark and light mode setters
+//dark and light mode helper functions
 function dark() {
   var calculator = document.querySelector(".calculator");
   calculator.style.backgroundColor = "#101010	";
@@ -43,7 +49,7 @@ function light(){
 
 
 
-//Toggle between dark and light mdoe
+//Calls helper functions on press of button
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 toggle.addEventListener('click', function(){
