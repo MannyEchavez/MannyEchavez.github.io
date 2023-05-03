@@ -36,13 +36,26 @@ function calculateResult() {
 //dark and light mode helper functions
 function dark() {
   var calculator = document.querySelector(".calculator");
-  calculator.style.backgroundColor = "#101010	";
-  calculator.style.transition = '2s';
+  var display = document.querySelector(".result");
+  var equals = document.querySelector(".equals");
+  equals.style.backgroundImage = "linear-gradient(to right, #A0D0FF, #999A9B)";
+  equals.style.transition = '1s';
+  display.style.backgroundColor = "black";
+  display.style.color = "white"
+  display.style.transition = "5s;"
+  calculator.style.backgroundColor = "black	";
+  calculator.style.transition = '1s';
 }
 function light(){
   var calculator = document.querySelector(".calculator");
-  calculator.style.backgroundColor = "#D3D3D3	";
-  calculator.style.transition = '2s';
+  var display = document.querySelector(".result");
+  var equals = document.querySelector(".equals");
+  equals.style.backgroundImage = "linear-gradient(to right, pink, yellow)";
+  equals.style.transition = '1s';
+  display.style.backgroundColor = "#ADD8E6";
+  display.style.transition = "2s;"
+  calculator.style.backgroundColor = "#ADD8E6";
+  calculator.style.transition = '1s';
 }
 
 
@@ -56,14 +69,14 @@ toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon');
     if(this.classList.toggle('bi-brightness-high-fill')){
         light();
-        body.style.background = '#C0C0C0	';
-        body.style.color = '#C0C0C0	';
-        body.style.transition = '2s';
+        body.style.background = 'white';
+        body.style.color = 'white	';
+        body.style.transition = '1s';
         
     }else{
         dark();
         body.style.background = '#282828	';
         body.style.color = 'LightGray';
-        body.style.transition = '2s';
+        body.style.transition = '1s';
     }
 });

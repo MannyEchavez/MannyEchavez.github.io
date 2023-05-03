@@ -7,10 +7,10 @@
 
   
 </head>
-<body onload="light()">
+<body onload = "light()">
 	<div class="calculator" id = calculator>
 		<input type="text" class="result" id="result" readonly>
-    <i class="bi bi-brightness-high-fill" id="toggleDark" onclick="dark()"></i>
+    	<i class="bi bi-brightness-high-fill" id="toggleDark" ></i>
 		<div class="row">
 			<button class="number " value="AC" onclick="clearResult()">AC</button>
 			<button class="number " value="+/-" onclick="toggleSign()">+/-</button>
@@ -21,7 +21,7 @@
 			<button class="number" value="7" onclick="addToResult(this.value)">7</button>
 			<button class="number" value="8" onclick="addToResult(this.value)">8</button>
 			<button class="number" value="9" onclick="addToResult(this.value)">9</button>
-			<button class="operator black" value="*" onclick="addToResult(this.value)">×</button>
+			<button class="operator black" value="*" onclick="addToResult(this.value)">x</button>
 		</div>
 		<div class="row">
 			<button class="number" value="4" onclick="addToResult(this.value)">4</button>
@@ -36,9 +36,9 @@
 			<button class="operator black" value="+" onclick="addToResult(this.value)">+</button>
 		</div>
 		<div class="row">
-			<button class="number zero" value="0" onclick="addToResult(this.value)">0</button>
 			<button class="number" value="." onclick="addToResult(this.value)">.</button>
-			<button class="operator black" value="=" onclick="calculateResult()">=</button>
+			<button class="number zero" value="0" onclick="addToResult(this.value)">0</button>
+			<button class="equals" value="=" onclick="calculateResult()">=</button>
 		</div>
 	</div>
 

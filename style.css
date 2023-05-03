@@ -22,8 +22,7 @@
     margin-bottom: 15px;
     padding: 20px;
     font-size: 50px;
-    color: #bcbcbc;
-    background-color: #000000;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
   }
@@ -42,38 +41,39 @@
     width: 70px;
     height: 70px;
     font-size: 30px;
-    color: #b8b8b8;
-    background-color: #333333;
+    color: #ffffff;
+    background-color: #bcbcbc00;
     border: none;
-    border-radius: 25%;
-    box-shadow: 0 3px 5px rgba(65, 64, 64, 0.2);
+    border-radius: 10%;
     cursor: pointer;
   }
   
   button:hover {
     transform: scale(1.1);
-    background-color: #454545;
+    background-color: #6f8e9d;
     transition: .3s;
 
   }
   
   .black {
-    background-color: #000000;
-    color: #fff;
+    color: #ffffff;
   }
   
   .zero {
-    width: 150px;
     text-align: center;
-    padding-left: 25px;
   }
   
  
   .operator:hover {
-    background-color: #ffad33;
+    background-color: #203744;
   }
 
   i{
     cursor: pointer;
     transform: translate(-50%, -50%);
+  }
+  .equals {
+    width: 150px;
+    border-radius: 16px;
+    background-image:linear-gradient(to right, pink, yellow);
   }
