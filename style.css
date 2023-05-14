@@ -46,8 +46,6 @@ p {
 }
 
 .header{
-    display: flexbox;
-    justify-content: space-between;
     color: rgb(0, 0, 0);
     font-size: 25px;
     padding-top: 40px;    
@@ -59,8 +57,37 @@ p {
     position: absolute;
     top: 0;
 }
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.contact-item{
+    padding: 10px;
+    color:white !important;
 
+}
+.contact-item:visited{
+    color:white;
+}
+.contact-item:hover{
+    transform: scale(1.5);
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
+}
+.contact-item:hover::after{
 
+}
+
+@keyframes scale {
+    from{
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
 
 .tracking-in-expand{animation:tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both}
 .text-focus-in{animation:text-focus-in 1.5s cubic-bezier(.55,.085,.68,.53) both}
