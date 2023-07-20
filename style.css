@@ -16,6 +16,7 @@ body {
 }
 .container{
     padding: 10px 10%;
+    
 }
 nav{
     display: flex;
@@ -112,10 +113,30 @@ span{
 p{
     font-family: Verdana, Tahoma, sans-serif;
     color: rgb(180, 180, 180);
+    font-size: medium;
 }
 
+#about .container .about-col-1 img {
+    width: 95%;
+    height: auto;
+}
 #skills {
     padding: 80px 0;
     color: #ffffff
 }
 
+#skills .container .row .about-col-1 img {
+    width: 70%;
+    height: auto;
+    
+}
+
+#education .container .row .about-col-1 img {
+    width: 70%;
+    height: auto;
+    border-radius: 45%;
+}
+
+center {
+    color: red
+}
